@@ -19,13 +19,13 @@ const adminCommands = {
             reply_title: "👥 *Grupos atuais ({$1})*\n\n"+
             "*ATENÇÃO*: Se quiser sair de *TODOS* os grupos digite !sairgrupos\n\n",
             reply_item: "- *ID*: {$1}\n"+
-            "- *Nome*: {$2}\n"+
-            "- *Participantes*: {$3}\n"+
+            "- *Name*: {$2}\n"+
+            "- *Participants*: {$3}\n"+
             "- *Admins*: {$4}\n"+
             "- *Bot é admin?* {$5}\n"+
             `- *Link*: {$6}\n\n`+
-            `- *Deseja sair desse grupo?* Use {$p}sair {$7}\n\n`,
-            error: "O bot nesse momento não está em nenhum grupo."
+            `- *want to leave group?* Use {$p}sair {$7}\n\n`,
+            error: "The bot is not in any group."
         },
         function: adminFunctions.gruposCommand
     },
@@ -75,7 +75,7 @@ const adminCommands = {
         `Ex: *{$p}addadmin* @membro - Promove o membro marcado a admin do bot.\n`+
         `Ex: *{$p}addadmin* +55219xxxx-xxxx - Promove o número digitado a admin do bot.\n`,
         msgs: {
-            reply: `✅ O usuário +{$1} ({$2}) foi promovido a *ADMINISTRADOR* do bot.`,
+            reply: `✅ O usuário +{$1} ({$2}) has been promoted  *ADMINISTRADOR* do bot.`,
             error_user_not_found: 'O usuário ainda não está registrado no bot, faça ele interagir com o bot primeiro.',
             error_already_admin: "Este usuário já é *ADMINISTRADOR* do bot.",
         },
